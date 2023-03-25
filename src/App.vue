@@ -2,19 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <AppHome/>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AddTodo/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import AppHome from "./components/AppHome.vue";
+import AddTodo from "./components/AddTodo";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
-    AppHome
+    AppHome,
+    AddTodo
   }
 };
 </script>
@@ -27,5 +27,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  max-width: 60rem;
+  margin: auto;
 }
 </style>
