@@ -36,7 +36,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .header-wrapper {
   display: flex;
 }
@@ -44,8 +44,8 @@ export default {
   display: flex;
   flex-direction: row-reverse;
   padding: 1rem 0;
-}
-.cta-wrapper button {
-  margin-left: 0.5rem;
+  button {
+    margin-left: 0.5rem;
+  }
 }
 </style>
