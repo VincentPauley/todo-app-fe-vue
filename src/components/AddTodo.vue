@@ -1,10 +1,11 @@
 <template>
   <div>
-    <div class="header-wrapper">
-      <h3>New Todo</h3>
-    </div>
+    <h3>New Todo</h3>
+    <FlexLeft>
+      <FormLabel label="Body:" forID="todoBody"/>
+    </FlexLeft>
     <b-form-textarea
-      id="textarea"
+      id="todoBody"
       v-model="todoBody"
       placeholder="Enter something..."
       rows="3"
@@ -19,9 +20,12 @@
 
 <script>
 import { BButton, BFormTextarea } from "bootstrap-vue";
+import FlexLeft from "./shared/FlexLeft";
+import FormLabel from "./shared/FormLabel";
 
+console.log(FlexLeft);
 export default {
-  components: { BButton, BFormTextarea },
+  components: { BButton, BFormTextarea, FlexLeft, FormLabel },
   data: () => ({
     todoBody: ""
   }),
@@ -37,9 +41,6 @@ export default {
 </script>
 
 <style lang="scss">
-.header-wrapper {
-  display: flex;
-}
 .cta-wrapper {
   display: flex;
   flex-direction: row-reverse;
