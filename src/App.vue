@@ -3,19 +3,19 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <NavBar/>
     <router-view/>
-    <AddTodo/>
+    <!-- <AddTodo/> -->
   </div>
 </template>
 
 <script>
-import AddTodo from "./components/AddTodo";
+// import AddTodo from "./components/AddTodo";
 import NavBar from "./components/NavBar";
 
 export default {
   name: "App",
   components: {
-    NavBar,
-    AddTodo
+    NavBar
+    // AddTodo
   }
 };
 </script>

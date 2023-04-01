@@ -2,6 +2,7 @@
   <b-nav tabs fill>
     <b-nav-item to="/" :active="homeRouteActive">Home</b-nav-item>
     <b-nav-item to="list" :active="listRouteActive">Todo List</b-nav-item>
+    <b-nav-item to="add" :active="addTodoRouteActive">Add</b-nav-item>
     <b-nav-item to="about" :active="aboutRouteActive">About</b-nav-item>
   </b-nav>
 </template>
@@ -22,6 +23,9 @@ export default {
     },
     aboutRouteActive() {
       return this.currentRoute === "/about";
+    },
+    addTodoRouteActive() {
+      return this.currentRoute === "/add";
     }
   },
   components: {

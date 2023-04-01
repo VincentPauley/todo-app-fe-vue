@@ -1,9 +1,7 @@
 <template>
   <div>
     <h3>List Todos</h3>
-    <div v-if="fetchInProgress">
-      <p>fetchInProgress...</p>
-    </div>
+    <LoadingSpinner v-if="fetchInProgress"/>
     <b-list-group v-else>
       <b-list-group-item v-for="(todo, i) in todos" :key="i">
         <p>{{ todo.title }}</p>
@@ -15,11 +13,13 @@
 </template>
 
 <script>
+import LoadingSpinner from "./shared/LoadingSpinner";
 import { BListGroup, BListGroupItem } from "bootstrap-vue";
 import { mapActions, mapGetters } from "vuex";
 
 export default {
   components: {
+    LoadingSpinner,
     BListGroup,
     BListGroupItem
   },

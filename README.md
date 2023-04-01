@@ -1,6 +1,7 @@
-# todo-app-fe
+# Todo App with Vue
 
-A simple todo manager FE project built using VueJS.
+This is the UI portion of a TODO application, separate backend is required
+but can run in offline mode for testing/development using localstorage.
 
 ## Project setup
 

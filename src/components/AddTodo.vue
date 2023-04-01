@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>New Todo</h3>
     <FlexLeft>
       <FormLabel label="Body:" forID="todoBody"/>
     </FlexLeft>
@@ -23,7 +22,6 @@ import { BButton, BFormTextarea } from "bootstrap-vue";
 import FlexLeft from "./shared/FlexLeft";
 import FormLabel from "./shared/FormLabel";
 
-console.log(FlexLeft);
 export default {
   components: { BButton, BFormTextarea, FlexLeft, FormLabel },
   data: () => ({
