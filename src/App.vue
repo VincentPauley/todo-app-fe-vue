@@ -1,23 +1,21 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <AppHome/>
-    <ListTodos/>
+    <NavBar/>
+    <router-view/>
     <AddTodo/>
   </div>
 </template>
 
 <script>
-import AppHome from "./components/AppHome.vue";
 import AddTodo from "./components/AddTodo";
-import ListTodos from "./components/ListTodos";
+import NavBar from "./components/NavBar";
 
 export default {
   name: "App",
   components: {
-    AppHome,
-    AddTodo,
-    ListTodos
+    NavBar,
+    AddTodo
   }
 };
 </script>

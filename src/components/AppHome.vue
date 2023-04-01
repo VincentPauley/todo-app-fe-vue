@@ -1,9 +1,7 @@
 <template>
   <div>
     <h1>Home</h1>
-    <p>{{todoCount}}</p>
     <p>{{ count }}</p>
-    <p>{{text}}</p>
   </div>
 </template>
 
@@ -11,9 +9,6 @@
 import { mapGetters, mapActions } from "vuex";
 
 export default {
-  data: () => ({
-    text: ""
-  }),
   methods: {
     ...mapActions({
       addTodo: "Todos/addTodo"
@@ -23,10 +18,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters({ count: "Todos/count" }),
-    todoCount() {
-      return 15;
-    }
+    ...mapGetters({ count: "Todos/count" })
   }
 };
 </script>
