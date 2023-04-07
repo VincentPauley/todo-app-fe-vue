@@ -1,21 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <b-jumbotron header="Todo App" lead="A sleak frontend for keeping track of stuff I need to do.">
+      <p>
+        Checkout the source code on
+        <a
+          target="_blank"
+          href="https://github.com/VincentPauley/todo-app-fe-vue"
+        >Github</a>
+      </p>
+    </b-jumbotron>
     <NavBar/>
     <router-view/>
-    <!-- <AddTodo/> -->
   </div>
 </template>
 
 <script>
-// import AddTodo from "./components/AddTodo";
+import { BJumbotron } from "bootstrap-vue";
+
 import NavBar from "./components/NavBar";
 
 export default {
   name: "App",
   components: {
+    BJumbotron,
     NavBar
-    // AddTodo
   }
 };
 </script>
